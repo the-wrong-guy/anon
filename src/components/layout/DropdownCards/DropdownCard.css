@@ -1,0 +1,7 @@
+.courses-card{
+    width: auto;
+  }
+  
+  .courses-card > img{
+    height: 150px;
+  }

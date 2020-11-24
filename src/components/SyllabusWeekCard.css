@@ -1,0 +1,102 @@
+.syllabus-week-card-container h2{
+    color: darkgray;
+    background-color: rgb(209, 208, 208);
+    margin: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 1%;
+}
+
+.syllabus-week-card-container{
+  border: 2px solid lightgray;
+  margin: 4%;
+  padding: 0;
+}
+
+.week-card-content-container{
+    padding: 3%;
+}
+
+.syllabus-week-card-container i{
+    color: rgb(192, 189, 189);
+}
+
+.syllabus-videoOrAudio-tab{
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(214, 211, 211);
+    padding-bottom: 10px;
+}
+
+.syllabus-videoOrAudio-tab span{
+    float: right;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+     
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+    .syllabus-videoOrAudio-tab{
+        padding-bottom: 40px;
+    }
+
+    .syllabus-videoOrAudio-tab span{
+         padding-top: 20px;
+      }
+  
+}

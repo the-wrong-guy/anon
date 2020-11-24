@@ -1,0 +1,137 @@
+.testimonial{
+    background:none;
+    text-align: center;
+    background-image: url("../../images/testimonial-bg.jpg");
+    position: relative;
+    z-index: -3;
+    height: 100%;
+}
+.tst-overlay{
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 0;
+}
+
+.testimonial-heading{
+    color: rgba(0, 174, 255, 0.877);
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.testimonial-item{
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: fadeIn ease 2s;
+}
+
+.testimonial-carousel{
+    height: 450px;
+}
+
+.testimonial-content{
+    color: white;
+    font-size: 18px;
+    line-height:1.5;
+}
+.testimonial-name{
+   color: white;
+   font-size: 30px;
+   margin: 0;
+   margin-top: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to { opacity: 1 }
+  }
+
+
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+      
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    
+}   
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) { 
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+    .testimonial-item{
+      padding-top: 40px;
+    }
+
+    .testimonial-carousel{
+        height: 600px;
+    }
+
+    .testimonial-content{
+        text-align: justify;
+    }
+
+    .testimonial-heading{
+        font-size: 54px;
+    }
+
+}   

@@ -1,0 +1,145 @@
+.subscribe-section{
+    height: 400px;
+    background-image: url("../../images/mail.jpg");
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.overlay-subscribe-section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 226, 255, 0.4);
+    z-index: 4;
+}
+
+.subscribe-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 6
+}
+
+.subscribe-content form{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.subscribe-form input{
+    height: 3rem;
+    width: 40rem;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    padding: 1%;
+    padding-left: 3%;
+    margin-left: 20px;
+}
+
+.subscribe-form button{
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 166, 0);
+    border-color: rgb(255, 166, 0) ;
+    color: white;
+    outline: none;
+}
+
+.subscribe-form button:hover{
+    box-shadow: 2px 2px 1px grey;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+      
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    
+}   
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) { 
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .subscribe-section{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .subscribe-content form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+    .subscribe-form button{
+        margin-top: 30px;
+        width: 200px;
+        padding: 15px;
+        
+    }
+
+    .subscribe-form input{
+        width: 120%;
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .mail-icon{
+        display: none!important;
+    }
+} 

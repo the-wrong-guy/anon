@@ -1,0 +1,21 @@
+.other-instructors-card {
+    display: inline-block;
+    background-color: white;
+    width: 44%;
+    margin: 2% 2%;
+    padding: 0 0 0 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.other-instructors-card img{
+    width: 50px;
+    border-radius: 100%;
+    display: inline-block;
+    float: left;
+}   
+.other-instructors-card p{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 0;
+}

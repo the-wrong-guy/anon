@@ -1,0 +1,94 @@
+.ourprograms {
+  color: var(--color-blue);
+  background-color: #fbf7ed;
+  text-align: center;
+  padding: 2% 0;
+}
+.ourprograms > h1 {
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 3em;
+}
+.ourprograms > p {
+  min-width: 350px;
+  font-size: 1.2em;
+}
+
+.ourprograms__buttonSecondary {
+  background-color: rgba(0, 0, 0, 0);
+  font-family: var(--montserrat);
+  color: var(--color-blue) !important;
+  border: 3px solid var(--color-blue) !important;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.3em;
+  border-radius: 6px;
+  margin-top: 2%;
+  margin-bottom: 50px;  
+}
+
+.ourprograms__buttonSecondary:hover{
+  background-color: var(--color-blue);
+  color: white !important;
+
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+      
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    
+}   
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) { 
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+} 

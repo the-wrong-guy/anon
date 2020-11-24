@@ -1,0 +1,162 @@
+.about__center {
+  background-color: var(--color-blue);
+  color: white;
+  padding: 6em 0;
+  width: 100vw;
+  font-family: var(--montserrat);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about__leftBox {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.about__leftBox > p {
+  margin: 25px 0;
+  width: 600px;
+}
+.about__leftBox > h2 {
+  white-space: nowrap;
+  font-size: 3em;
+}
+.about__leftBox > button {
+  display: flex;
+  background: none;
+  border: 1px solid white;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.about__leftBox > button:hover{
+  background-color: rgb(255, 153, 0);
+  border-color: rgb(255, 153, 0);
+}
+
+.youtube-embed{
+  width: 630px;
+  height: 400px;
+  border: none;
+}
+.about__rightBox {
+  width: 100%;
+}
+.about__player {
+}
+
+.youtube-embed{
+
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+     
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .about__center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-box{
+    display: flex!important;
+    flex-direction: column;
+    width: 100%!important;
+    padding: 0!important;
+    margin: 0!important;
+    margin-left: -17px!important;
+  }
+
+  .about__leftBox{
+     margin-bottom: 40px!important;
+  }
+
+  .about__leftBox h2{
+    font-size: 34px;
+  }
+
+  .about__leftBox p {
+    font-weight: normal;
+    font-family: sans;
+    width: 100%;
+  }
+
+  .youtube-embed{
+    height: 230px;
+    }
+  
+  
+  
+}

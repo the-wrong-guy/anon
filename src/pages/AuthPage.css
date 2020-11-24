@@ -1,0 +1,7 @@
+.auth-form-page{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-top: 5%;
+ padding-bottom: 5%;
+}

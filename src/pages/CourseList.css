@@ -1,0 +1,181 @@
+.course-list-breadcrum{
+    text-align: center;
+    background-image: url("../images/bg3.jpg");
+    height: 20rem;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    z-index: 0;
+    flex-direction: column;
+}
+
+.category-heading{
+    margin: 0;
+    color: white;
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.category-breadcrum-links{
+  text-decoration: none;
+  color:white;
+  position: relative;
+  z-index: 100;
+  margin-right: 20px;
+  margin-left:5px;
+  font-weight: 100;
+}
+.category-breadcrum-links:hover{
+  color: #15BEF1;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.category-page-about-course-section{
+    display: flex;
+    flex-direction: row;
+}
+.category-page-about-course-section-content{
+    margin: 4%;
+    text-align: center;
+}
+.category-page-about-course-image{
+    width: 40%;
+    margin: 5%;
+    height: 28rem;
+}
+
+.course-list-page-breadcrum{
+  background-color: #e6e9e9;
+  width: 98%;
+  padding: 15px;
+}
+
+.course-list-page-breadcrum-links{
+ text-decoration: none;
+ margin-right: 20px;
+ margin-left: 10px;
+ color: rgb(114, 112, 112);
+ font-weight: 100;
+}
+.course-list-page-breadcrum-links:hover{
+  color:#15BEF1;
+}
+
+
+.active{
+  color:#15BEF1;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+     
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+   
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .course-cards-container{
+      padding: 20px;
+  }
+  .category-page-about-course-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .category-page-about-course-image{
+    width: 90%;
+    height: 35rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .course-cards-container{
+        padding: 20px;
+    }
+    .category-page-about-course-section{
+        display: flex;
+        flex-direction: column;
+      }
+    .category-page-about-course-image{
+        width: 90%;
+        height: 34rem;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .course-cards-container{
+        padding: 20px;
+    }
+    .category-page-about-course-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .category-page-about-course-image{
+        width: 90%;
+        height: 20rem;
+      }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .course-cards-container{
+        padding: 20px;
+    }
+    .category-page-about-course-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .category-page-about-course-image{
+        width: 90%;
+        height: 20rem;
+      } 
+      
+  
+}

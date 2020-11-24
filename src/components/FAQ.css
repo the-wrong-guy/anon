@@ -1,0 +1,22 @@
+.down-arrow{
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.FAQ-Answer{
+    animation: fadeIn ease 2s;
+    line-height: 1.6;
+}
+
+.FAQ-container{
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    margin-left: 0;
+}
+
+.FAQ-Question{
+    font-weight: bold;
+    font-size: 19px;
+}

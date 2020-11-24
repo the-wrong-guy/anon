@@ -1,0 +1,261 @@
+.arrow-container-left{
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  left: 10px;
+}
+
+.arrow-container-right{
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  right: 10px;
+}
+
+.black-bg{
+  background-color: rgb(36, 36, 36);
+}
+
+.carousel{
+  height: 550px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.carousel-item-1{
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-image: url("../../images/slide1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.carousel-item-2{
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-image: url("../../images/slide2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.carousel-item-3{
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-image: url("../../images/slide3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.headings-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.heading1{
+    position: relative;
+    background-color: rgba(0, 162, 255,0.9);
+    color: white;
+    width:50%;  
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+    border-radius: 30px;
+    animation: fadeInBottom ease 1s;
+}
+.heading2{
+  background-color: rgba(255, 196, 0,0.9);
+  color: white;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1%;
+  border-radius: 30px;
+  animation: fadeInBottom ease 0.2s;
+}
+
+
+
+.forward-slide{
+  color: rgba(219, 208, 208, 0.411);
+}
+
+.forward-slide:hover{
+  color: rgba(224, 221, 221, 0.9);
+}
+
+
+.previous-slide{
+  color: rgba(219, 208, 208, 0.411);
+}
+
+.previous-slide:hover{
+  color: rgba(224, 221, 221, 0.9);
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+      
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    
+}   
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) { 
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+   .heading1{
+      font-size: 25px;
+      padding: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   .heading2{
+     font-size: 25px;
+     padding: 50px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+   .forward-slide{
+     font-size: 30px!important;
+   }
+   
+   .previous-slide{
+     font-size: 30px!important;
+   }
+} 
