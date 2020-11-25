@@ -24,18 +24,28 @@ import DropdownCard from './components/layout/DropdownCards/DropdownCard'
 
 function App() {
   const DropdownMenu = useRef()
+  const [DropdownHover,setDropdownHover] = useState(false)
   const AllCourses = useRef()
   const StandardList = useRef()
   const CourseSingle = useRef()
   const UserDashboard = useRef()
   const Default = useRef()
 
+  useEffect(()=>{
+    if(DropdownHover){
+      DropdownMenu.current.style.display = "flex"
+    }
+    if(!DropdownHover){
+      DropdownMenu.current.style.display = "none"
+    }
+  },[DropdownHover])
+
   function toggleHover(){
-    DropdownMenu.current.style.display = "flex"
+    setDropdownHover(true)
   }
 
   function toggleHoverOnLeave(){
-    DropdownMenu.current.style.display = "none"
+    setDropdownHover(false)
   }
 
   function MouseOverAllCourses(){
