@@ -17,9 +17,10 @@ import AuthPage from "./pages/AuthPage";
 import FullScreenOverlay from './components/FullScreenOverlay';
 import AuthForm from './components/AuthForm';
 
-
 import image from './images/slide2.jpg'
 import DropdownCard from './components/layout/DropdownCards/DropdownCard'
+import AboutUsPage from './pages/About-Us Page/AboutUs'
+import ContactUsPage from './pages/Contact-Us Page/ContactUs'
 
 
 function App() {
@@ -172,8 +173,8 @@ function App() {
     <ul>
               <li><Link to = "/" className = "nav-links" onClick = {setSearchNull}>Home</Link></li>
               <li className="courses"><Link to = "/branches" onMouseEnter={toggleHover} className = "nav-links" onClick = {setSearchNull}>Courses</Link></li>
-              <li><Link to = "/" className = "nav-links" onClick = {setSearchNull}>About us</Link></li>
-              <li><Link to = "/" className = "nav-links" onClick = {setSearchNull}>Contact us</Link>
+              <li><Link to = "/about-us" className = "nav-links" onClick = {setSearchNull}>About us</Link></li>
+              <li><Link to = "/contact-us" className = "nav-links" onClick = {setSearchNull}>Contact us</Link>
               </li>
          </ul>
     </div>
@@ -273,6 +274,12 @@ function App() {
          <Route path = "/" exact>
            <Home />
          </Route>
+         <Route path="/about-us" exact>
+            <AboutUsPage/>
+         </Route>
+         <Route path="/contact-us" exact>
+            <ContactUsPage/>
+         </Route>   
          <Route path = "/branches" exact>
             <CourseCategories />
          </Route>
@@ -284,7 +291,7 @@ function App() {
          </Route>
          <Route path = "/courses/:courseId" exact>
              <CoursePage />
-         </Route>         
+         </Route>     
          <Redirect to = "/"/>
        </Switch>} 
        <Footer />
